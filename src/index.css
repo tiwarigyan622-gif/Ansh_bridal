@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --royal-purple: #3B0764;
+    --royal-purple-dark: #23043D;
+    --royal-purple-light: #581C87;
+    --gold: #D4AF37;
+    --gold-light: #F6E05E;
+    --gold-dark: #B8860B;
+    --cream: #FAF6F0;
+    --cream-light: #FFFDF9;
+    --cream-dark: #F3EBDD;
+  }
+
+  body {
+    background-color: var(--cream);
+    color: #221526;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Luxury gold border and gradients */
+.border-gold {
+  border-color: #D4AF37;
+}
+
+.bg-royal-gradient {
+  background: radial-gradient(circle at 50% 20%, #4C0E75 0%, #3B0764 45%, #23043D 95%);
+}
+
+.bg-royal-deep {
+  background-color: #23043D;
+}
+
+.bg-cream-card {
+  background-color: #FFFDF9;
+}
+
+.text-gold {
+  color: #D4AF37;
+}
+
+.gold-shimmer-text {
+  background: linear-gradient(135deg, #F9F0D9 0%, #D4AF37 50%, #F3DA8E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #B8860B 100%);
+  color: #1A0427;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.gold-gradient-btn:hover {
+  background: linear-gradient(135deg, #E5C358 0%, #D4AF37 50%, #C5A059 100%);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+}
+
+.royal-purple-btn {
+  background: linear-gradient(135deg, #3B0764 0%, #2A0845 100%);
+  color: #FAF6F0;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.royal-purple-btn:hover {
+  background: linear-gradient(135deg, #4C0E75 0%, #3B0764 100%);
+  border-color: #D4AF37;
+  box-shadow: 0 4px 18px rgba(59, 7, 100, 0.4);
+}
+
+/* Subtle Indian traditional jaali / decorative pattern overlay */
+.jaali-pattern {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.jaali-pattern-dark {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.16) 1.2px, transparent 0);
+  background-size: 28px 28px;
+}
