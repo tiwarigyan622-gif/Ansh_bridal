@@ -87,6 +87,7 @@ export const PhotoManagerModal: React.FC = () => {
                         <img
                           src={photo}
                           alt={cat.name}
+                          referrerPolicy="no-referrer"
                           className="w-full h-full object-cover"
                         />
                       ) : (
@@ -161,7 +162,7 @@ export const PhotoManagerModal: React.FC = () => {
                     <div className="flex items-start gap-4">
                       <div className="w-24 h-24 rounded-xl overflow-hidden bg-white border border-[#D4AF37]/30 flex-shrink-0 flex items-center justify-center">
                         {heroPhoto ? (
-                          <img src={heroPhoto} alt="Hero Banner" className="w-full h-full object-cover" />
+                          <img src={heroPhoto} alt="Hero Banner" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                         ) : (
                           <span className="text-[10px] text-[#3B0764] text-center p-2">Hero Photo Slot</span>
                         )}
@@ -212,7 +213,7 @@ export const PhotoManagerModal: React.FC = () => {
                     <div className="flex items-start gap-4">
                       <div className="w-24 h-24 rounded-xl overflow-hidden bg-white border border-[#D4AF37]/30 flex-shrink-0 flex items-center justify-center">
                         {aboutPhoto ? (
-                          <img src={aboutPhoto} alt="About Artist" className="w-full h-full object-cover" />
+                          <img src={aboutPhoto} alt="About Artist" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                         ) : (
                           <span className="text-[10px] text-[#3B0764] text-center p-2">About Artist Slot</span>
                         )}

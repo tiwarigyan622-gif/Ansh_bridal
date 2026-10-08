@@ -54,6 +54,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
           <img
             src={photoUrl}
             alt={title}
+            referrerPolicy="no-referrer"
             className="max-h-[75vh] w-auto max-w-full object-contain"
           />
         </div>

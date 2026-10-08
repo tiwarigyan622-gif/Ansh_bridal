@@ -1,9 +1,14 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { MehndiCategoryId } from '../types';
+import defaultLegMehndi from '../assets/images/leg_mehndi_bridal_1791461321019.jpg';
 
 interface PhotoSlotData {
   [slotId: string]: string; // base64 or URL
 }
+
+const DEFAULT_PHOTOS: PhotoSlotData = {
+  'leg-mehndi-bridal': defaultLegMehndi,
+};
 
 interface PhotoContextType {
   getPhoto: (slotId: string) => string | null;
@@ -86,7 +91,7 @@ export const PhotoProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, [photos]);
 
   const getPhoto = (slotId: string): string | null => {
-    return photos[slotId] || null;
+    return photos[slotId] || DEFAULT_PHOTOS[slotId] || null;
   };
 
   const setPhoto = (slotId: string, dataUrl: string) => {

@@ -55,6 +55,7 @@ export const PhotoSlot: React.FC<PhotoSlotProps> = ({
           <img
             src={currentPhoto}
             alt={categoryName}
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
